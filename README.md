@@ -11,9 +11,9 @@ the color of the inscription or the size of the sun.
 The scene was created using X3DOM, which allows 3D models to be displayed in the browser without the need for additional plug-ins. Most of the objects, such as the castle, 
 stich, dragon, waterfall and carriage, were developed in Blender and exported to X3D format.
 
-![2](./images/castle.jpg)
+![2](./images/blender_objects_images/castle.jpg)
 
-![3](./images/stich.jpg)
+![3](./images/blender_objects_images/stich.jpg)
 
 In addition, JavaScript was used in the code to handle animation and user interaction.
 
