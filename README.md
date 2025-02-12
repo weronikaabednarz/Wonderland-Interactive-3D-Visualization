@@ -8,14 +8,14 @@ the color of the inscription or the size of the sun.
 ![1](./images/2.png)
 
 ## Technologies
-The scene was created using X3DOM, which allows 3D models to be displayed in the browser without the need for additional plug-ins. Most of the objects, such as the castle, 
-stich, dragon, waterfall and carriage, were developed in Blender and exported to X3D format.
+The scene was created using **X3DOM**, which allows 3D models to be displayed in the browser without the need for additional plug-ins. Most of the objects, such as the castle, 
+stich, dragon, waterfall and carriage, were developed in **Blender** and exported to X3D format.
 
 ![2](./blender_objects_images/castle.jpg)
 
 ![3](./blender_objects_images/stich.jpg)
 
-In addition, JavaScript was used in the code to handle animation and user interaction.
+In addition, **JavaScript** was used in the code to handle animation and user interaction.
 
 ## Implementation
 The design includes several dynamic elements:
@@ -25,7 +25,7 @@ The design includes several dynamic elements:
 - stich pops out of the castle as a surprise,
 - user can change the color of the lettering and the size of the sun with sliders.
 
-The scene is built in HTML, and animations and user interactions are handled in JavaScript. Functions that manipulate X3D object attributes, such as dynamic colour changes, 
+The scene is built in **HTML**, and animations and user interactions are handled in **JavaScript**. Functions that manipulate X3D object attributes, such as dynamic colour changes, 
 object scaling and smooth translations, were used. The waterfall animation was implemented by cyclically changing the colour component, while the dragon moves in a circle 
 around the scene. The carriages gradually appear and move towards the castle, while Stich's character performs a hopping animation.
 
