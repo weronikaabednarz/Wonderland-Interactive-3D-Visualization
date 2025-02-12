@@ -5,7 +5,7 @@ The “Zasiedmiogród” project is an interactive 3D scene embedded in the brow
 The goal of the project is to create an immersive environment in which the user can observe animations and interactively change some elements of the scene, such as 
 the color of the inscription or the size of the sun.
 
-![1](./images/blinking.jpg)
+![1](./images/2.jpg)
 
 ## Technologies
 The scene was created using X3DOM, which allows 3D models to be displayed in the browser without the need for additional plug-ins. Most of the objects, such as the castle, 
@@ -24,8 +24,9 @@ The design includes several dynamic elements:
 - carriage moves along a designated route, and new carriages appear dynamically,
 - stich pops out of the castle as a surprise,
 - user can change the color of the lettering and the size of the sun with sliders.
-All this makes the scene interactive and engaging, combining static models with animated elements.
 
-## Results
+The scene is built in HTML, and animations and user interactions are handled in JavaScript. Functions that manipulate X3D object attributes, such as dynamic colour changes, 
+object scaling and smooth translations, were used. The waterfall animation was implemented by cyclically changing the colour component, while the dragon moves in a circle 
+around the scene. The carriages gradually appear and move towards the castle, while Stich's character performs a hopping animation.
 
-![2](./images/2.jpg)
+![4](./images/1.jpg)
