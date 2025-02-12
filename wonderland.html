@@ -40,27 +40,27 @@
             </transform>
 
             <transform id="towers" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
-                <Inline url="obiekty/towers.x3d"></Inline>
+                <Inline url="objects/towers.x3d"></Inline>
             </transform>
 
             <transform id="walls" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
-                <Inline url="obiekty/walls.x3d"></Inline>
+                <Inline url="objects/walls.x3d"></Inline>
             </transform>
 
             <transform id="windows" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
-                <Inline url="obiekty/windows.x3d"></Inline>
+                <Inline url="objects/windows.x3d"></Inline>
             </transform>
 
             <transform id="door" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
-                <Inline url="obiekty/door.x3d"></Inline>
+                <Inline url="objects/door.x3d"></Inline>
             </transform>
 
             <transform id="dragon" translation="400 150 -600" scale="15 15 15" rotation="0 1 0 -1.57">
-                <Inline url="obiekty/dragon.x3d"></Inline>
+                <Inline url="objects/dragon.x3d"></Inline>
             </transform>
 
             <transform id="waterfall" translation="300 -90 -600" scale="40 40 40" rotation="0 1 0 -1.80">
-                <Inline url="obiekty/waterfall.x3d"></Inline>
+                <Inline url="objects/waterfall.x3d"></Inline>
                 	<Group DEF="group_ME_Cube_001">
                         <Shape>
                             <Appearance>
@@ -97,31 +97,27 @@
             </transform>
 
             <transform id="mur" translation="-400 -70 -900" scale="50 30 50" rotation="0 1 0 0.85">
-                <Inline url="obiekty/mur.x3d"></Inline>
+                <Inline url="objects/mur.x3d"></Inline>
             </transform>
 
             <Transform DEF="brama1" translation="-310 -49 -570" scale="80 60 50">
-                <Inline url="obiekty/brama1.x3d"></Inline>
+                <Inline url="objects/brama1.x3d"></Inline>
             </Transform>
 
             <Transform DEF="brama2" translation="-203 -49 -618" scale="80 60 50" rotation="0 1 0 -2.3">
-                <Inline url="obiekty/brama2.x3d"></Inline>
+                <Inline url="objects/brama2.x3d"></Inline>
             </Transform>
 
             <transform id="way" translation="290 -129 -500" scale="40 40 40" rotation="0 1 0 -0.3">
-                <Inline url="obiekty/way.x3d"></Inline>
-            </transform>
-
-            <transform id="wizard" translation="-250 -88 -420" scale="5 5 5" rotation="0 1 0 -1.20">
-                <Inline url="obiekty/wizard.x3d"></Inline>
+                <Inline url="objects/way.x3d"></Inline>
             </transform>
 
             <transform id="kareta0" translation="200 -65 -400" scale="15 15 15" rotation="0 1 0 -0.3">
-                <Inline url="obiekty/kareta.x3d"></Inline>
+                <Inline url="objects/kareta.x3d"></Inline>
             </transform>
 
             <transform id="mountains" translation="-1000 150 -1500" scale="10 16 10" rotation="0 1 0 -1.57">
-                <Inline url="obiekty/mountains.x3d"></Inline>
+                <Inline url="objects/mountains.x3d"></Inline>
             </transform>
 
             <Transform id="Text" translation="236 185 -500" scale="20 20 20">
@@ -134,20 +130,20 @@
             </Transform>
 
             <transform id="stich" translation="-350 58 -780" scale="5 5 5" rotation="0 1 0 -2.7">
-                <Inline url="obiekty/stich.x3d"></Inline>
+                <Inline url="objects/stich.x3d"></Inline>
             </transform>
 
         </scene>
     </x3d>
     <div id="controls">
-        <h3> Zmień rozmiar słońca:
+        <h3> Change sun size:
             <input type="range" id="rozmiarSlonca" min="1" max="5" step="0.05" value="0">
         </h3>
-        <h3>Zmień kolor napisu: 
+        <h3>Change caption color: 
             <input type="color" id="kolorNapisu" value="#ffffff">
         </h3>
         <h3>
-            <button onclick="moveStich()">Niespodzianka</button>
+            <button onclick="moveStich()">Surprise</button>
         </h3>
     </div>
 
@@ -214,7 +210,7 @@
                     newKareta.setAttribute('translation', `${initialX} -65 ${initialZ}`);
                     newKareta.setAttribute('scale', '15 15 15');
                     newKareta.setAttribute('rotation', '0 1 0 -0.3');
-                    newKareta.innerHTML = '<Inline url="obiekty/kareta.x3d"></Inline>';
+                    newKareta.innerHTML = '<Inline url="objects/kareta.x3d"></Inline>';
                     document.querySelector('x3d scene').appendChild(newKareta);
 
                     startMovingKareta(newKareta, karetaCount);
