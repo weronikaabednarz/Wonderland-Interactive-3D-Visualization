@@ -1,0 +1,285 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <!--<script src="x3dom-full.js"></script>
+    <script src="https://www.x3dom.org/download/x3dom-full.js"></script>-->
+    <script src="x3dom-full.js"></script>
+    <style>
+        #controls {
+            margin-top: 30px;
+        }
+        h3 {
+            margin-top: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <x3d width="100%" height="97%">
+        <scene>
+            <viewpoint position="0 0 0" description="Widok - start"></viewpoint>
+
+            <pointLight location='60 200 -350' color='1 1 1' intensity='1' radius="350"></pointLight>
+
+            <Background groundAngle='[1.309, 1.57]'
+                groundColor='(0.745 0.922 0.459, 0.745 0.922 0.459, 0.745 0.922 0.459)' skyAngle='[1.309, 1.57]'
+                skyColor='(0.0 0.2 0.7, 0.0 0.5 1.0, 1.0 1.0 1.0)'>
+            </Background>
+
+            <pointLight location='0 10 0' color='1 1 1' intensity='1'></pointLight>
+
+            <transform id="ground" translation="0 -100 -600">
+                <shape>
+                    <appearance>
+                        <material emissiveColor="0.753, 0.925, 0.455"></material>
+                    </appearance>
+                    <box size="2500 3 1300"></box>
+                </shape>
+            </transform>
+
+            <transform id="towers" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
+                <Inline url="obiekty/towers.x3d"></Inline>
+            </transform>
+
+            <transform id="walls" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
+                <Inline url="obiekty/walls.x3d"></Inline>
+            </transform>
+
+            <transform id="windows" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
+                <Inline url="obiekty/windows.x3d"></Inline>
+            </transform>
+
+            <transform id="door" translation="-400 -20 -900" scale="14 14 14" rotation="0 1 0 -1.20">
+                <Inline url="obiekty/door.x3d"></Inline>
+            </transform>
+
+            <transform id="dragon" translation="400 150 -600" scale="15 15 15" rotation="0 1 0 -1.57">
+                <Inline url="obiekty/dragon.x3d"></Inline>
+            </transform>
+
+            <transform id="waterfall" translation="300 -90 -600" scale="40 40 40" rotation="0 1 0 -1.80">
+                <Inline url="obiekty/waterfall.x3d"></Inline>
+                	<Group DEF="group_ME_Cube_001">
+                        <Shape>
+                            <Appearance>
+                                <Material id="waterfallMaterial"
+                                        diffuseColor="0.125 0.590 0.800"
+                                        specularColor="0.125 0.590 0.800"
+                                        emissiveColor="0.125 0.590 0.800"
+                                        ambientIntensity="0.000"
+                                        shininess="0.500"
+                                        transparency="0.0"
+                                        DEF ="test"
+                                        />
+                            </Appearance>
+                            <IndexedFaceSet solid="false"
+                                            texCoordIndex="0 1 2 3 -1 4 5 6 7 -1 8 9 10 11 -1 12 13 14 15 -1 16 17 18 19 -1 20 21 22 23 -1 24 25 26 27 -1 28 29 30 31 -1 32 33 34 35 -1 36 37 38 39 -1 40 41 42 43 -1 44 45 46 47 -1 "
+                                            coordIndex="0 2 3 1 -1 2 6 7 3 -1 6 4 5 7 -1 4 0 1 5 -1 2 0 4 6 -1 7 5 1 3 -1 8 10 11 9 -1 10 14 15 11 -1 14 12 13 15 -1 12 8 9 13 -1 10 8 12 14 -1 15 13 9 11 -1 "
+                                            >
+                                <Coordinate DEF="coords_ME_Cube_001"
+                                            point="-2.436749 0.079984 2.129998 -2.436749 -0.079984 2.129998 -2.436749 0.079984 -2.129998 -2.436749 -0.079984 -2.129998 2.436749 0.079984 2.129998 2.436749 -0.079984 2.129998 2.436749 0.079984 -2.129998 2.436749 -0.079984 -2.129998 -2.851262 -0.103435 0.648662 -2.851262 3.896413 0.648662 -2.851262 -0.103435 -1.432270 -2.851262 3.896413 -1.432270 -1.480884 -0.103435 0.648662 -1.480884 3.896413 0.648662 -1.480884 -0.103435 -1.432270 -1.480884 3.896413 -1.432270 "
+                                            />
+                                <TextureCoordinate point="0.3750 0.0000 0.3750 0.2500 0.6250 0.2500 0.6250 0.0000 0.3750 0.2500 0.3750 0.5000 0.6250 0.5000 0.6250 0.2500 0.3750 0.5000 0.3750 0.7500 0.6250 0.7500 0.6250 0.5000 0.3750 0.7500 0.3750 1.0000 0.6250 1.0000 0.6250 0.7500 0.1250 0.5000 0.1250 0.7500 0.3750 0.7500 0.3750 0.5000 0.6250 0.5000 0.6250 0.7500 0.8750 0.7500 0.8750 0.5000 0.3750 0.0000 0.3750 0.2500 0.6250 0.2500 0.6250 0.0000 0.3750 0.2500 0.3750 0.5000 0.6250 0.5000 0.6250 0.2500 0.3750 0.5000 0.3750 0.7500 0.6250 0.7500 0.6250 0.5000 0.3750 0.7500 0.3750 1.0000 0.6250 1.0000 0.6250 0.7500 0.1250 0.5000 0.1250 0.7500 0.3750 0.7500 0.3750 0.5000 0.6250 0.5000 0.6250 0.7500 0.8750 0.7500 0.8750 0.5000 " />
+                            </IndexedFaceSet>
+                        </Shape>
+                    </Group>
+            </transform>
+
+            <transform id="sun" translation="220 230 -600">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="1 1 0"></material>
+                    </appearance>
+                    <sphere radius="8"></sphere>
+                </shape>
+            </transform>
+
+            <transform id="mur" translation="-400 -70 -900" scale="50 30 50" rotation="0 1 0 0.85">
+                <Inline url="obiekty/mur.x3d"></Inline>
+            </transform>
+
+            <Transform DEF="brama1" translation="-310 -49 -570" scale="80 60 50">
+                <Inline url="obiekty/brama1.x3d"></Inline>
+            </Transform>
+
+            <Transform DEF="brama2" translation="-203 -49 -618" scale="80 60 50" rotation="0 1 0 -2.3">
+                <Inline url="obiekty/brama2.x3d"></Inline>
+            </Transform>
+
+            <transform id="way" translation="290 -129 -500" scale="40 40 40" rotation="0 1 0 -0.3">
+                <Inline url="obiekty/way.x3d"></Inline>
+            </transform>
+
+            <transform id="wizard" translation="-250 -88 -420" scale="5 5 5" rotation="0 1 0 -1.20">
+                <Inline url="obiekty/wizard.x3d"></Inline>
+            </transform>
+
+            <transform id="kareta0" translation="200 -65 -400" scale="15 15 15" rotation="0 1 0 -0.3">
+                <Inline url="obiekty/kareta.x3d"></Inline>
+            </transform>
+
+            <transform id="mountains" translation="-1000 150 -1500" scale="10 16 10" rotation="0 1 0 -1.57">
+                <Inline url="obiekty/mountains.x3d"></Inline>
+            </transform>
+
+            <Transform id="Text" translation="236 185 -500" scale="20 20 20">
+                <Shape>
+                    <Appearance>
+                        <Material id="TextMaterial" diffuseColor="0.0 0.2 0.7" />
+                    </Appearance>
+                    <Text string='"ZASIEDMIOGÓROGRÓD"' />
+                </Shape>
+            </Transform>
+
+            <transform id="stich" translation="-350 58 -780" scale="5 5 5" rotation="0 1 0 -2.7">
+                <Inline url="obiekty/stich.x3d"></Inline>
+            </transform>
+
+        </scene>
+    </x3d>
+    <div id="controls">
+        <h3> Zmień rozmiar słońca:
+            <input type="range" id="rozmiarSlonca" min="1" max="5" step="0.05" value="0">
+        </h3>
+        <h3>Zmień kolor napisu: 
+            <input type="color" id="kolorNapisu" value="#ffffff">
+        </h3>
+        <h3>
+            <button onclick="moveStich()">Niespodzianka</button>
+        </h3>
+    </div>
+
+    <script>
+        document.getElementById('rozmiarSlonca').addEventListener('input', function (event) {
+            const size = event.target.value;
+            document.getElementById('sun').setAttribute('scale', `${size} ${size} ${size}`);
+        });
+
+        document.getElementById('kolorNapisu').addEventListener('input', function (event) {
+            const color = event.target.value;
+            document.getElementById('TextMaterial').setAttribute('diffuseColor', color);
+        });
+
+        function start_animacja() {
+            let angle = 0;
+            const radius = 700;
+            const height = 300;
+            const centerX = 0;
+            const centerZ = -600;
+            var blue = 0.8
+            const redComponent = 0.125;
+            const greenComponent = 0.590;
+
+            var delta = -0.01
+            setInterval(function () {
+                angle -= 0.01;
+                blue+=delta
+                if (blue <= 0.5 || blue >= 1)
+                    delta*=-1
+                const x = centerX + radius * Math.cos(angle);
+                const z = centerZ + radius * Math.sin(angle);
+                const y = height;
+                const color = `${redComponent} ${greenComponent} ${blue}`;
+
+                document.getElementById('waterfallMaterial').setAttribute("emissiveColor", color)
+                document.getElementById('waterfallMaterial').setAttribute("diffuseColor", color)
+
+                console.log(color)
+                const dragon = document.getElementById('dragon');
+                if (dragon) {
+                    dragon.setAttribute('translation', `${x} ${y} ${z}`);
+                }
+            }, 10);
+        }
+
+        // Funkcja poruszająca karetami
+        function startKaretaMovement() {
+            let karetaCount = 1; // Liczba karet
+            const initialX = 500;  
+            const initialZ = -210; 
+            //const finalX = -150;
+            const finalX = [-150, 0, 150, 300, 450];
+            const speed = 1;
+            let currentX = initialX; 
+            let currentZ = initialZ;
+            const maxKarety = 5;  // Maksymalna liczba karet
+
+            function createNewKareta() {
+                // Tworzymy nową karetę z unikalnym identyfikatorem
+                if (karetaCount <= maxKarety) {
+                    const newKareta = document.createElement('transform');
+                    newKareta.setAttribute('id', `kareta${karetaCount}`);
+                    newKareta.setAttribute('translation', `${initialX} -65 ${initialZ}`);
+                    newKareta.setAttribute('scale', '15 15 15');
+                    newKareta.setAttribute('rotation', '0 1 0 -0.3');
+                    newKareta.innerHTML = '<Inline url="obiekty/kareta.x3d"></Inline>';
+                    document.querySelector('x3d scene').appendChild(newKareta);
+
+                    startMovingKareta(newKareta, karetaCount);
+                }
+            }
+
+            function startMovingKareta(kareta, index) {
+                let currentX = initialX;
+                let currentZ = initialZ;
+                const targetX = finalX[index - 1];
+
+                let interval = setInterval(function () {
+                    if (currentX <= targetX) {
+                        // Kareta osiągnęła miejsce docelowe
+                        clearInterval(interval);
+
+                        // Ustawiamy ostateczną pozycję
+                        kareta.setAttribute('translation', `${targetX} ${kareta.getAttribute('translation').split(' ')[1]} ${currentZ}`);
+                        karetaCount++;
+                        createNewKareta(); // Dodajemy nową karetę
+                    } else {
+                        // Poruszamy kareta w kierunku końca
+                        currentX -= speed;
+                        currentZ -= 0.4;
+
+                        // Ustawiamy nową pozycję
+                        kareta.setAttribute('translation', `${currentX} ${kareta.getAttribute('translation').split(' ')[1]} ${currentZ}`);
+                    }
+                }, 4);
+            }
+
+            // Uruchamiamy animację dla pierwszej karety
+            const firstKareta = document.getElementById('kareta0');
+            startMovingKareta(firstKareta, karetaCount);
+        }
+
+        function moveStich() {
+            const stich = document.getElementById('stich');
+            let direction = 1;
+            let currentY = 58;
+            const minY = currentY;
+            const maxY = 80;
+
+            // Animacja w górę i w dół
+            const interval = setInterval(() => {
+                currentY += direction;
+
+                // Zmiana kierunku ruchu gdy osiągnie limit
+                if (currentY >= maxY || currentY <= minY) {
+                    direction *= -1;
+                }
+
+                // Aktualizacja pozycji
+                stich.setAttribute('translation', `-350 ${currentY} -780`);
+
+                if (currentY === 58 && direction === 1) {
+                    clearInterval(interval);
+                }
+            }, 50);
+        }
+
+        window.onload = function() {
+            start_animacja();
+            startKaretaMovement();
+        };
+    </script>
+</body>
+</html>
