@@ -4,7 +4,7 @@
 The “Zasiedmiogród” project is an interactive 3D scene embedded in the browser, depicting a fairy-tale landscape with a castle, dragon, waterfall and other elements. 
 The goal of the project is to create an immersive environment in which the user can observe animations and interactively change some elements of the scene, such as 
 the color of the inscription or the size of the sun.
-
+ 
 ![1](./images/2.png)
 
 ## Technologies
